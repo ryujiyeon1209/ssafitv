@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssafit.rh.model.dao.LikeVideoDao">
+
+	
+	<select id="selectOne" parameterType="String" resultType="LikeVideo">
+		select *
+		from likeVideo
+		where userId = #{userId}
+	</select>
+	
+	<select id="select" parameterType="LikeVideo" resultType="LikeVideo">
+		select *
+		from likeVideo
+		where userId = #{userId} and videoId = #{videoId}
+	</select>
+	
+	<insert id="insert" parameterType="LikeVideo">
+		insert into likeVideo
+		values (0, #{videoId}, #{userId})
+	</insert>
+	
+	<delete id="deleteOne" parameterType="LikeVideo">
+	 	delete from likeVideo
+	 	where userId = #{userId} and videoId = #{videoId}
+	</delete>
+	
+</mapper>

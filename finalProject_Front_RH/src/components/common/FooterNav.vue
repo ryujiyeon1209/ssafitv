@@ -3,7 +3,7 @@
     <div  style="height:50px;">
     <footer class="footer-16371">
       <div class="container" >
-        <div class="row justify-content-center">
+        <div class="row justify-content-center111">
           <div class="col-md-9 text-center">
             <div class="footer-site-logo mb-4">
               <a href="#" style="font-family: 'SUITE-Regular';">SsafiTv</a>
